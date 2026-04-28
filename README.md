@@ -1,116 +1,139 @@
-#Data Analytics Project
+# 📊 Business KPI Analysis Dashboard – Power BI Project  
 
-📊 Business KPI Analysis Dashboard – Power BI Project
-📁 Project Overview
+## 📁 Project Overview  
+This project presents a comprehensive **Business KPI Analysis Dashboard** developed using Power BI to monitor and evaluate organizational performance. The dashboard delivers actionable insights into **sales trends, customer behavior, product performance, and regional distribution**, enabling stakeholders to make informed, data-driven decisions.  
 
-This project focuses on analyzing key business performance indicators (KPIs) using Power BI. The goal was to design an interactive dashboard that provides insights into sales performance, customer metrics, and category-wise business behavior across different time periods and regions.
+It combines **performance tracking** with **comparative analytics**, offering a clear view of actual results against predefined business goals.
 
-The dashboard includes both Business Performance Analysis and Comparison Insights, helping stakeholders track progress toward goals, identify trends, and support data-driven decision-making.
+---
 
-🎯 Objectives
-To monitor and evaluate key business KPIs such as Sales, Quantity Sold, Orders, and Customers.  
-To visualize monthly and quarterly sales performance.  
-To analyze product category contributions and regional sales distribution.  
-To identify top customers driving business growth.  
-To create a goal vs. actual comparison for performance optimization.
+## 🎯 Objectives  
+- Track and evaluate core business KPIs: **Sales, Quantity Sold, Orders, and Customers**  
+- Analyze **monthly and quarterly sales trends** to identify patterns and seasonality  
+- Examine **product category performance** and **regional sales distribution**  
+- Identify **high-value customers** contributing to revenue growth  
+- Enable **goal vs. actual performance comparison** for strategic optimization  
 
-🧩 Tools & Technologies
-• Power BI Desktop – Data visualization & dashboard creation  
-• Excel / CSV Dataset – Source of raw data  
-• DAX (Data Analysis Expressions) – Used for calculated measures and KPIs  
-• Power Query Editor – Used for data transformation and cleaning  
+---
 
-🧮 Data Preparation Steps
-Data Importing:  
-   Imported raw sales data into Power BI from an Excel/CSV file containing orders, quantities, and customer details.
+## 🧩 Tools & Technologies  
+- **Power BI Desktop** – Dashboard development and data visualization  
+- **Excel / CSV** – Source data  
+- **DAX (Data Analysis Expressions)** – KPI calculations and measures  
+- **Power Query Editor** – Data cleaning and transformation  
 
-Data Cleaning:  
-   - Removed duplicates and null values.  
-   - Standardized column names (Sales, Order ID, Product Category, City, etc.).  
-   - Converted data types (e.g., date columns, sales amount to currency format).
+---
 
-Data Transformation (Power Query):  
-   - Created new calculated columns for Profit, Goal Achievement %, and Month/Quarter extraction.  
-   - Merged and appended queries for unified data structure.
+## 🧮 Data Preparation & Modeling  
 
-Creating Relationships:  
-   Established relationships between Orders, Customers, Products, and Regions tables using primary keys.
+### 🔹 Data Import  
+- Imported structured sales data from Excel/CSV files including orders, customers, and product details  
 
-📊 Dashboard Design & Components
-KPI Summary Cards
-Displayed key performance metrics with goal comparisons:
+### 🔹 Data Cleaning  
+- Removed duplicates and handled missing values  
+- Standardized column naming conventions  
+- Converted data types (dates, currency, numeric fields)  
 
-| KPI | Actual | Goal | Achievement |
-|-----|---------|------|--------------|
-| Sales | 139.11K | 98.93K | +40.61% |
-| Quantity Sold | 1358 | 1037 | +30.95% |
-| Orders | 247 | 186 | +32.8% |
-| Customers | 207 | 165 | +25.45% |
+### 🔹 Data Transformation  
+- Created calculated columns: **Profit, Goal Achievement %, Month, Quarter**  
+- Merged and appended datasets for a unified model  
 
-These KPIs provide a direct view of current performance versus targets.
+### 🔹 Data Modeling  
+- Established relationships across **Orders, Customers, Products, and Regions** tables using primary and foreign keys  
 
-Trend Analysis by Month
-• Total Sales by Month line chart shows seasonal fluctuations in performance.
-• Orders by Month and Quantity Sold by Month area charts highlight operational trends and customer demand cycles.
+---
 
-Gauge Charts – Goal Achievement Overview
-Four gauge visuals summarize:
-• Total Sales (688.56K of 1.38M goal)
-• Quantity Sold (7019 units)
-• Orders (1255 total)
-• Customers (582 total)
+## 📊 Dashboard Design & Components  
 
-This view gives at-a-glance target completion tracking.
+### 🔹 KPI Summary Cards  
 
-Comparison Dashboard
-Focused on understanding product and regional contributions:
-• Total Sales by Product Category: Clothing, Furniture, and Electronics lead in total revenue.
-• Order Count by Category: Clothing (22.31%) contributes most, followed by Toys and Books.
-• Total Sales by City (Map Visualization): Major sales hubs include New York, Los Angeles, Houston, and Chicago.
+| KPI              | Actual  | Goal   | Achievement |
+|------------------|--------:|-------:|------------:|
+| Sales            | 139.11K | 98.93K | +40.61%     |
+| Quantity Sold    | 1,358   | 1,037  | +30.95%     |
+| Orders           | 247     | 186    | +32.80%     |
+| Customers        | 207     | 165    | +25.45%     |
 
-Top Customers Analysis
-A data table lists the Top 100 Customers showing:
-• Customer ID  
-• Total Quantity Sold  
-• Total Sales Value  
+---
 
-For example, Customer ID 175 accounted for sales of 1,907.51 with 24 units, contributing significantly to total business revenue (aggregate of 2,50,591.09).
+### 🔹 Trend Analysis  
+- **Monthly Sales (Line Chart):** Highlights seasonality and growth trends  
+- **Orders & Quantity (Area Charts):** Visualizes demand cycles and operational patterns  
 
-Quarterly Trend Visualization
-A chart illustrates quarter-wise performance changes, identifying Q2 peaks and Q3 dips, useful for quarterly strategy planning.
+---
 
-📈 Key Insights
-• Sales exceeded target by over 40%, indicating strong performance.  
-• Clothing category contributed the highest to total sales.  
-• New York and Los Angeles were top-performing cities.  
-• Quarter 2 showed a revenue spike, suggesting high customer engagement.  
-• Consistent order growth and rising customer base across the year demonstrate business expansion.
+### 🔹 Goal Achievement (Gauge Charts)  
+- Sales: 688.56K / 1.38M  
+- Quantity Sold: 7,019 units  
+- Orders: 1,255  
+- Customers: 582  
 
-🚀 Outcomes
-• Built an easy-to-navigate Power BI dashboard for tracking performance metrics.  
-• Presented both time-based and category-based comparisons.  
-• Delivered visual clarity to support quick executive decision-making.  
-• Encouraged performance benchmarking using goal vs. actual analysis.
+---
 
-📂 Project Structure
+### 🔹 Comparative Analysis  
+- **Sales by Category:** Clothing, Furniture, Electronics lead revenue  
+- **Order Distribution:** Clothing contributes the highest share (22.31%)  
+- **Sales by City:** Top cities include New York, Los Angeles, Houston, Chicago  
 
-``
-📁 PowerBIBusinessKPIAnalysis
+---
+
+### 🔹 Top Customers Analysis  
+- Top 100 customers ranked by sales and quantity  
+- Example: Customer ID 175 → Sales: 1,907.51 | Quantity: 24  
+- Total contribution: 250,591.09  
+
+---
+
+### 🔹 Quarterly Performance  
+- Identifies **Q2 peak** and **Q3 dip**, useful for strategic planning  
+
+---
+
+## 📈 Key Insights  
+- Sales exceeded targets by **40%**  
+- Clothing category is the top revenue driver  
+- New York and Los Angeles lead regional sales  
+- Q2 shows highest engagement  
+- Consistent growth in orders and customer base  
+
+---
+
+## 🚀 Outcomes  
+- Built an **interactive and user-friendly dashboard**  
+- Enabled **data-driven decision-making**  
+- Improved **business performance visibility**  
+- Delivered **clear and impactful data storytelling**  
+
+---
+
+## 📂 Project Structure  
+PowerBIBusinessKPIAnalysis/
 │
-├── 📄 PowerBIProject.pdf       # Complete dashboard screenshots
-├── 📊 Dataset.xlsx              # (Sample or anonymized data)
-├── 📘 README.md                 # Project overview documentation
-└── 📈 Business_KPI.pbix         # Main Power BI dashboard file
-``
+├── PowerBIProject.pdf
+├── Dataset.xlsx
+├── README.md
+└── Business_KPI.pbix
+---
 
-🧠 Learnings
-• Hands-on experience with DAX calculations and Power Query transformations.  
-• Understanding of data modeling, relationships, and filter context.  
-• Improved ability to communicate data insights through storytelling visuals.
+## 🧠 Key Learnings  
+- Advanced **DAX calculations**  
+- Strong understanding of **data modeling**  
+- Hands-on with **Power Query transformations**  
+- Improved **data storytelling skills**  
 
-🏁 Conclusion
+---
 
-This Power BI project transforms raw business data into actionable insights, enabling strategic tracking of key business KPIs. Through goal-based comparisons, trend visualizations, and customer analytics, the dashboard provides a full 360° view of business performance.
+## 🏁 Conclusion  
+This project transforms raw data into actionable insights using Power BI. It provides a **360° view of business performance** through KPI tracking, trend analysis, and comparison dashboards, supporting strategic and operational decisions.
 
+---
 
+## 📌 How to Use  
+1. Download the `.pbix` file  
+2. Open in **Power BI Desktop**  
+3. Explore the interactive dashboard  
 
+---
+
+## ⭐ If you found this project useful  
+Give it a star on GitHub ⭐
